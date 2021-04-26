@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <ImageView
+        android:id="@+id/weatherimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/firebase"
+            />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/updateId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter ID"
+                android:textColor="#1A237E" />
+
+            <EditText
+                android:id="@+id/editUpdateID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/updaterequiredfield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter required field"
+                android:textColor="#1A237E" />
+
+            <EditText
+                android:id="@+id/editUpdateRequiredfield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Column name in FB\n e.g:firstName"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/updaterequired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter required value"
+                android:textColor="#1A237E" />
+
+            <EditText
+                android:id="@+id/editUpdateRequired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <Button
+                android:id="@+id/bttnubdate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#01579B"
+                android:background="#01579B"
+                android:text="update to FireBase" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/deleteVla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Id of user"
+                android:textColor="#1A237E" />
+
+            <EditText
+                android:id="@+id/editDeleteVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <Button
+                android:id="@+id/bttndelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#01579B"
+                android:background="#01579B"
+                android:text="Delete from FireBase" />
+
+        </TableRow>
+    </TableLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/bttnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#01579B"
+            android:background="#01579B"
+            android:gravity="center"
+            android:text="Back" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".update">
+    <ImageView
+        android:id="@+id/weatherimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="#FAF8F8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sql" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/updateId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter ID"
+                android:textColor="#1A237E" />
+
+            <EditText
+                android:id="@+id/editUpdateIDSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/updaterequired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter new Email"
+                android:textColor="#1A237E" />
+
+            <EditText
+                android:id="@+id/editUpdateRequiredSQL"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/bttnupdateSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#01579B"
+                android:background="#01579B"
+                android:text="update Local DB" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/deleteVlaSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Id of user"
+                android:textColor="#1A237E" />
+
+            <EditText
+                android:id="@+id/editDeleteValSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/bttndeleteSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#01579B"
+                android:background="#01579B"
+
+                android:text="Delete from Local DB" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/bttnbackSQL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#01579B"
+            android:background="#01579B"
+
+            android:text="Back" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

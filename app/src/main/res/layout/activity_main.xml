@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/weatherimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter User data "
+        android:textColor="#DF0909"
+        android:textSize="25sp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textColor="#1A237E" />
+
+            <EditText
+                android:id="@+id/EdituserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                 android:hint="ID"
+                android:textColor="#1A237E"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textColor="#1A237E"/>
+
+            <EditText
+                android:id="@+id/editfirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+               android:hint="First Name"
+                android:textColor="#1A237E"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textColor="#1A237E"/>
+
+            <EditText
+                android:id="@+id/editlastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Last Name"
+                android:textColor="#1A237E"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="#1A237E"/>
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="Phone Number"
+                android:textColor="#1A237E"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textColor="#1A237E"/>
+
+            <EditText
+                android:id="@+id/editEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Email Address"
+                android:textColor="#1A237E"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+
+       >
+
+        <TextView
+            android:id="@+id/firebase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_gravity="center"
+            android:gravity="center"
+            android:text="FireBase "
+            android:textColor="#DF0909"
+            android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:id="@+id/bttnAddFB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#01579B"
+                android:background="#01579B"
+                android:text="Add" />
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/bttnUpdateFB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#01579B"
+                android:background="#01579B"
+                android:text="Update &amp; Delete" />
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/bttnView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#01579B"
+                android:background="#01579B"
+                android:text="View " />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/sql"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SQLlite "
+            android:textColor="#DF0909"
+            android:textSize="25sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+
+        <Button
+            android:layout_marginRight="5dp"
+            android:id="@+id/bttnAddlocal"
+            android:backgroundTint="#01579B"
+            android:background="#01579B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/bttnUpdatelocal"
+            android:backgroundTint="#01579B"
+            android:background="#01579B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update &amp; Delete" />
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bttnViewlocal"
+            android:backgroundTint="#01579B"
+            android:background="#01579B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View " />
+    </LinearLayout>
+        <LinearLayout
+           android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/bttnfetchData"
+                android:backgroundTint="#01579B"
+                android:background="#01579B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fetch data from Firebase to LocalDB" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:id="@+id/bttnBack"
+            android:backgroundTint="#01579B"
+            android:background="#01579B"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Back" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
